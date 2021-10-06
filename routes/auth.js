@@ -22,10 +22,10 @@ const {nombres, email, phone, state, municipio, nick, password, places} = req.bo
     password,
     places
   })
-
+console.log(user)
  try{
   // user.password = await user.encryptPass(user.password);
-  await user.save();
+  await user.insertOne();
     
   res.json({ auth: true});
 
