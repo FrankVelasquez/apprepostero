@@ -25,7 +25,7 @@ const {nombres, email, phone, state, municipio, nick, password, places} = req.bo
 console.log(user)
  try{
   // user.password = await user.encryptPass(user.password);
-  await user.insertOne();
+  await user.insert();
     
   res.json({ auth: true});
 
