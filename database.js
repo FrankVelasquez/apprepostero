@@ -10,7 +10,7 @@ const varMongoose = {
 
 //Tomar en cuenta si las variables de entorno estan undefined
 
- mongoose.connect(URI, varMongoose)
+ mongoose.connect(uri2, varMongoose)
   .then(db => {
     console.log(`Conectado exitosamente a ${uri2} `)
     
