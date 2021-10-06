@@ -12,7 +12,7 @@ const varMongoose = {
 
  mongoose.connect(URI, varMongoose)
   .then(db => {
-    console.log(`Conectado exitosamente a ${uri2} `)
+    console.log(`Conectado exitosamente a ${URI} `)
     
   })
   .catch(err => {
