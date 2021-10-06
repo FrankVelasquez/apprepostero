@@ -10,7 +10,7 @@ const User = require("../models/PastryChef");
 //ruta para registrar nuevo usuario
 router.post("/signup", async (req, res) => {
  
-const {nombres, email, phone, state, municipio, nick, password} = req.body;
+const {nombres, email, phone, state, municipio, nick, password, places} = req.body;
 
   const user = new User({
     name:nombres,
@@ -19,11 +19,12 @@ const {nombres, email, phone, state, municipio, nick, password} = req.body;
     state,
     municipio,
     nick,
-    password
+    password,
+    places
   })
 
  try{
-  user.password = await user.encryptPass(user.password);
+  // user.password = await user.encryptPass(user.password);
   await user.save();
     
   res.json({ auth: true});
