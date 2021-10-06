@@ -1,0 +1,37 @@
+{
+  "name": "apprepo",
+  "version": "1.0.0",
+  "description": "App repostero",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "engines":{
+    "node":"16.x"
+  },
+  "repository": {
+    "type": "git",
+    "url": "FrankVelasquez"
+  },
+  "author": "Franzua Velasquez",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-jwt": "^6.1.0",
+    "helmet": "^4.6.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.0.8",
+    "morgan": "^1.10.0",
+    "uuid": "^8.3.2",
+    "winston": "^3.3.3",
+    "winston-daily-rotate-file": "^4.5.5"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.13"
+  }
+}
